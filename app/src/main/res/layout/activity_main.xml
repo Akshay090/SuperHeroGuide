@@ -7,20 +7,22 @@
     tools:context="com.blogytec.superheroguide.MainActivity">
 
 
-   
+
 
     <EditText
+
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="wAkanda forever!"
+        android:hint="enter txt"
         tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="3dp"
         tools:ignore="MissingConstraints" />
-  
-   <Button
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,18 +30,13 @@
         android:text="press here"
         android:background="#82daa8"/>
 
-  
-
-
-
-<TextView
-    app:layout_constraintWidth_default="wrap"
-    app:layout_constrainedHeight="true"
-    android:text="hiya"
-
-
-
-
-    />
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="output"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"/>
 
 </android.support.constraint.ConstraintLayout>
